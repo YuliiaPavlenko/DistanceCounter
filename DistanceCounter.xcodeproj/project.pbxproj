@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AF17779924869C5B0014D38A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF17779824869C5B0014D38A /* AppDelegate.swift */; };
-		AF17779B24869C5B0014D38A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF17779A24869C5B0014D38A /* SceneDelegate.swift */; };
-		AF17779D24869C5B0014D38A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF17779C24869C5B0014D38A /* ViewController.swift */; };
 		AF1777A024869C5B0014D38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF17779E24869C5B0014D38A /* Main.storyboard */; };
 		AF1777A224869C5F0014D38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1777A124869C5F0014D38A /* Assets.xcassets */; };
 		AF1777A524869C5F0014D38A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1777A324869C5F0014D38A /* LaunchScreen.storyboard */; };
@@ -18,8 +16,6 @@
 /* Begin PBXFileReference section */
 		AF17779524869C5B0014D38A /* DistanceCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF17779824869C5B0014D38A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF17779A24869C5B0014D38A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF17779C24869C5B0014D38A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF17779F24869C5B0014D38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF1777A124869C5F0014D38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF1777A424869C5F0014D38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				AF17779824869C5B0014D38A /* AppDelegate.swift */,
-				AF17779A24869C5B0014D38A /* SceneDelegate.swift */,
-				AF17779C24869C5B0014D38A /* ViewController.swift */,
 				AF17779E24869C5B0014D38A /* Main.storyboard */,
 				AF1777A124869C5F0014D38A /* Assets.xcassets */,
 				AF1777A324869C5F0014D38A /* LaunchScreen.storyboard */,
@@ -138,9 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF17779D24869C5B0014D38A /* ViewController.swift in Sources */,
 				AF17779924869C5B0014D38A /* AppDelegate.swift in Sources */,
-				AF17779B24869C5B0014D38A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yuliiapavlenko.DistanceCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yuliiapavlenko.DistanceCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
