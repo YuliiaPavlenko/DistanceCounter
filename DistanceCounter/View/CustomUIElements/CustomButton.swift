@@ -10,12 +10,14 @@ import UIKit
 
 class CustomButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func awakeFromNib() {
+        setupAppearance()
     }
-    */
-
+    
+    private func setupAppearance() {
+        layer.cornerRadius = 10
+        backgroundColor = .systemBlue
+        setTitleColor(.white, for: .normal)
+        titleLabel?.font = Fonts.titleRegular
+    }
 }

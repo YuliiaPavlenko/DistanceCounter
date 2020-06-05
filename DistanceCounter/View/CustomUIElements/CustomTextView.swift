@@ -9,13 +9,15 @@
 import UIKit
 
 class CustomTextView: UITextView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    override func awakeFromNib() {
+        setupAppearance()
     }
-    */
-
+    
+    private func setupAppearance() {
+        layer.cornerRadius = 10
+        layer.borderWidth = 0.2
+        layer.borderColor = UIColor.systemGray.cgColor
+        textColor = .darkText
+    }
 }
