@@ -16,6 +16,7 @@
 		AF1777BA2489711E0014D38A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1777B92489711E0014D38A /* CustomTextField.swift */; };
 		AF1777BC248971340014D38A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1777BB248971340014D38A /* CustomButton.swift */; };
 		AF1777BE248971550014D38A /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1777BD248971550014D38A /* CustomTextView.swift */; };
+		AF6FDCE5248A7D160042679A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6FDCE4248A7D160042679A /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AF1777B92489711E0014D38A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AF1777BB248971340014D38A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		AF1777BD248971550014D38A /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		AF6FDCE4248A7D160042679A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		AF17779724869C5B0014D38A /* DistanceCounter */ = {
 			isa = PBXGroup;
 			children = (
+				AF6FDCE3248A7CFD0042679A /* Common */,
 				AF17779824869C5B0014D38A /* AppDelegate.swift */,
 				AF1777B32489602E0014D38A /* View */,
 				AF17779E24869C5B0014D38A /* Main.storyboard */,
@@ -90,6 +93,14 @@
 				AF1777BD248971550014D38A /* CustomTextView.swift */,
 			);
 			path = CustomUIElements;
+			sourceTree = "<group>";
+		};
+		AF6FDCE3248A7CFD0042679A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AF6FDCE4248A7D160042679A /* Fonts.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6FDCE5248A7D160042679A /* Fonts.swift in Sources */,
 				AF1777BA2489711E0014D38A /* CustomTextField.swift in Sources */,
 				AF17779924869C5B0014D38A /* AppDelegate.swift in Sources */,
 				AF1777BE248971550014D38A /* CustomTextView.swift in Sources */,
