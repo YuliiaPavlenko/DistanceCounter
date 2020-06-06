@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Welcome: Codable {
+struct Place: Codable {
     var placeID: Int?
     var licence, osmType: String?
     var osmID: Int?
