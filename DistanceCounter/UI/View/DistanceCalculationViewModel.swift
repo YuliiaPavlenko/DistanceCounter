@@ -22,13 +22,13 @@ class DistanceCalculationViewModel {
     
     func checkIfLatitudeIsCorrect(userInput: String) {
         if !checkIfUserInputIsValid(correctRange: latitudeRange, userInput: userInput) {
-            view?.showIncorrectUserInput(with: "Aaa", message: "Bbb")
+            view?.showIncorrectUserInput(with: "invalid_format".localized(), message: "invalid_latitude".localized())
         }
     }
     
     func checkIfLongitudeIsCorrect(userInput: String) {
         if !checkIfUserInputIsValid(correctRange: longitudeRange, userInput: userInput) {
-            view?.showIncorrectUserInput(with: "Aaa", message: "Bbb")
+            view?.showIncorrectUserInput(with: "invalid_format".localized(), message: "invalid_longitude".localized())
         }
     }
 }
