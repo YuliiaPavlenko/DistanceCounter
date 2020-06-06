@@ -22,6 +22,8 @@
 		AF8F41E6248B876800B74FA8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41E5248B876800B74FA8 /* Alert.swift */; };
 		AF8F41EA248B9A7300B74FA8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF8F41E9248B9A7300B74FA8 /* Localizable.strings */; };
 		AF8F41ED248B9E2600B74FA8 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41EC248B9E2600B74FA8 /* String+Utils.swift */; };
+		AF8F41F2248BA39200B74FA8 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41F1248BA39200B74FA8 /* Address.swift */; };
+		AF8F41F4248BA3B900B74FA8 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41F3248BA3B900B74FA8 /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		AF8F41E5248B876800B74FA8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		AF8F41E9248B9A7300B74FA8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		AF8F41EC248B9E2600B74FA8 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		AF8F41F1248BA39200B74FA8 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		AF8F41F3248BA3B900B74FA8 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		AF17779724869C5B0014D38A /* DistanceCounter */ = {
 			isa = PBXGroup;
 			children = (
+				AF8F41EF248B9F9500B74FA8 /* Data */,
 				AF8F41EB248B9B7C00B74FA8 /* UI */,
 				AF8F41E8248B9A4600B74FA8 /* Resources */,
 				AF17779824869C5B0014D38A /* AppDelegate.swift */,
@@ -140,6 +145,23 @@
 				AF8F41EC248B9E2600B74FA8 /* String+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		AF8F41EF248B9F9500B74FA8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AF8F41F0248BA38000B74FA8 /* DTO */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AF8F41F0248BA38000B74FA8 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				AF8F41F3248BA3B900B74FA8 /* Place.swift */,
+				AF8F41F1248BA39200B74FA8 /* Address.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,11 +237,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8F41ED248B9E2600B74FA8 /* String+Utils.swift in Sources */,
+				AF8F41F4248BA3B900B74FA8 /* Place.swift in Sources */,
 				AF6FDCE5248A7D160042679A /* Fonts.swift in Sources */,
 				AF1777BA2489711E0014D38A /* CustomTextField.swift in Sources */,
 				AF17779924869C5B0014D38A /* AppDelegate.swift in Sources */,
 				AF8F41E4248B856A00B74FA8 /* DistanceCalculationViewProtocol.swift in Sources */,
 				AF1777BE248971550014D38A /* CustomTextView.swift in Sources */,
+				AF8F41F2248BA39200B74FA8 /* Address.swift in Sources */,
 				AF1777B824896BE40014D38A /* CustomLabel.swift in Sources */,
 				AF1777B5248964A50014D38A /* DistanceCalculationViewController.swift in Sources */,
 				AF1777BC248971340014D38A /* CustomButton.swift in Sources */,
