@@ -121,7 +121,15 @@ extension DistanceCalculationViewController: UITextFieldDelegate {
 
 // MARK: - DistanceCalculationViewProtocol
 extension DistanceCalculationViewController: DistanceCalculationViewProtocol {
+    func updateUI(with: Place) {
+    
+    }
+    
+    func presentAlertOnMainThread(title: String, message: String, buttonTitle: String) {
+        Alert.showAlertOnMainThread(on: self, with: title, message: message)
+    }
+    
     func showIncorrectUserInput(with title: String, message: String) {
-        Alert.showIncorrectUserInputAlert(on: self, with: title, message: message)
+        Alert.showAlert(on: self, with: title, message: message)
     }
 }

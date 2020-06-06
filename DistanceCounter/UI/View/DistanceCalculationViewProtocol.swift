@@ -10,4 +10,6 @@ import Foundation
 
 protocol DistanceCalculationViewProtocol: class {
     func showIncorrectUserInput(with title: String, message: String)
+    func updateUI(with: Place)
+    func presentAlertOnMainThread(title: String, message: String, buttonTitle: String)
 }
