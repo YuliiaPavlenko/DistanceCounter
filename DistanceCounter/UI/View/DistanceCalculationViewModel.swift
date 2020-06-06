@@ -42,7 +42,7 @@ class DistanceCalculationViewModel {
             case .success(let point):
                 self.view?.updateUI(with: point)
             case .failure(let error):
-                self.view?.presentAlertOnMainThread(title: "Error", message: error.rawValue, buttonTitle: "OK")
+                self.view?.presentAlertOnMainThread(title: "error".localized(), message: error.rawValue, buttonTitle: "ok".localized())
             }
         }
     }
