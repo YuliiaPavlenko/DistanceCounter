@@ -28,6 +28,7 @@
 		AF8F41FA248BA56A00B74FA8 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41F9248BA56A00B74FA8 /* ApiRouter.swift */; };
 		AF8F41FC248BA77B00B74FA8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41FB248BA77B00B74FA8 /* NetworkManager.swift */; };
 		AF8F4201248BA86800B74FA8 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F4200248BA86800B74FA8 /* ApiError.swift */; };
+		AF8F4205248BF17D00B74FA8 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F4204248BF17D00B74FA8 /* SpinnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		AF8F41F9248BA56A00B74FA8 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		AF8F41FB248BA77B00B74FA8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AF8F4200248BA86800B74FA8 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		AF8F4204248BF17D00B74FA8 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				AF1777B92489711E0014D38A /* CustomTextField.swift */,
 				AF1777BB248971340014D38A /* CustomButton.swift */,
 				AF1777BD248971550014D38A /* CustomTextView.swift */,
+				AF8F4204248BF17D00B74FA8 /* SpinnerViewController.swift */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				AF1777B5248964A50014D38A /* DistanceCalculationViewController.swift in Sources */,
 				AF1777BC248971340014D38A /* CustomButton.swift in Sources */,
 				AF8F41E6248B876800B74FA8 /* Alert.swift in Sources */,
+				AF8F4205248BF17D00B74FA8 /* SpinnerViewController.swift in Sources */,
 				AF8F41E2248B768B00B74FA8 /* DistanceCalculationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
