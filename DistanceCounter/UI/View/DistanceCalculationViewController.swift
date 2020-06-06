@@ -26,6 +26,8 @@ class DistanceCalculationViewController: UIViewController {
     
     var viewModel = DistanceCalculationViewModel()
     
+    let spinerVC = SpinnerViewController()
+    
     @IBAction func startPointLatitudeTextFieldIsActive(_ sender: Any) {
         viewModel.checkIfLatitudeIsCorrect(userInput: startPointLatitudeTextField.text!)
     }
@@ -122,7 +124,7 @@ extension DistanceCalculationViewController: UITextFieldDelegate {
 // MARK: - DistanceCalculationViewProtocol
 extension DistanceCalculationViewController: DistanceCalculationViewProtocol {
     func updateUI(with: Place) {
-    
+        
     }
     
     func presentAlertOnMainThread(title: String, message: String, buttonTitle: String) {
@@ -131,5 +133,18 @@ extension DistanceCalculationViewController: DistanceCalculationViewProtocol {
     
     func showIncorrectUserInput(with title: String, message: String) {
         Alert.showAlert(on: self, with: title, message: message)
+    }
+    
+    func showLoadingView() {
+        addChild(spinerVC)
+        spinerVC.view.frame = view.frame
+        view.addSubview(spinerVC.view)
+        spinerVC.didMove(toParent: self)
+    }
+    
+    func dismissLoadingView() {
+        spinerVC.willMove(toParent: nil)
+        spinerVC.view.removeFromSuperview()
+        spinerVC.removeFromParent()
     }
 }
