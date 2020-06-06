@@ -9,3 +9,4 @@
 "invalid_format" = "Invalid format";
 "invalid_latitude" = "Latitude should be in range -90...90";
 "invalid_longitude" = "Longitude should be in range -180...180";
+"ok" = "OK";
