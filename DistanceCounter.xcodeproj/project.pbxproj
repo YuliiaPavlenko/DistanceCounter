@@ -26,6 +26,8 @@
 		AF8F41F4248BA3B900B74FA8 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41F3248BA3B900B74FA8 /* Place.swift */; };
 		AF8F41F6248BA46600B74FA8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41F5248BA46600B74FA8 /* Config.swift */; };
 		AF8F41FA248BA56A00B74FA8 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41F9248BA56A00B74FA8 /* ApiRouter.swift */; };
+		AF8F41FC248BA77B00B74FA8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41FB248BA77B00B74FA8 /* NetworkManager.swift */; };
+		AF8F4201248BA86800B74FA8 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F4200248BA86800B74FA8 /* ApiError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		AF8F41F3248BA3B900B74FA8 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		AF8F41F5248BA46600B74FA8 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		AF8F41F9248BA56A00B74FA8 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		AF8F41FB248BA77B00B74FA8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AF8F4200248BA86800B74FA8 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 		AF8F41EF248B9F9500B74FA8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				AF8F41FF248BA85300B74FA8 /* Error */,
 				AF8F41F8248BA53600B74FA8 /* Networking */,
 				AF8F41F0248BA38000B74FA8 /* DTO */,
 				AF8F41F7248BA52800B74FA8 /* Config */,
@@ -182,8 +187,17 @@
 			isa = PBXGroup;
 			children = (
 				AF8F41F9248BA56A00B74FA8 /* ApiRouter.swift */,
+				AF8F41FB248BA77B00B74FA8 /* NetworkManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		AF8F41FF248BA85300B74FA8 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				AF8F4200248BA86800B74FA8 /* ApiError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +276,8 @@
 				AF8F41F4248BA3B900B74FA8 /* Place.swift in Sources */,
 				AF6FDCE5248A7D160042679A /* Fonts.swift in Sources */,
 				AF8F41F6248BA46600B74FA8 /* Config.swift in Sources */,
+				AF8F41FC248BA77B00B74FA8 /* NetworkManager.swift in Sources */,
+				AF8F4201248BA86800B74FA8 /* ApiError.swift in Sources */,
 				AF1777BA2489711E0014D38A /* CustomTextField.swift in Sources */,
 				AF17779924869C5B0014D38A /* AppDelegate.swift in Sources */,
 				AF8F41E4248B856A00B74FA8 /* DistanceCalculationViewProtocol.swift in Sources */,
