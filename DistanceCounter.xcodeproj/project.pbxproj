@@ -17,6 +17,9 @@
 		AF1777BC248971340014D38A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1777BB248971340014D38A /* CustomButton.swift */; };
 		AF1777BE248971550014D38A /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1777BD248971550014D38A /* CustomTextView.swift */; };
 		AF6FDCE5248A7D160042679A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6FDCE4248A7D160042679A /* Fonts.swift */; };
+		AF8F41E2248B768B00B74FA8 /* DistanceCalculationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41E1248B768B00B74FA8 /* DistanceCalculationViewModel.swift */; };
+		AF8F41E4248B856A00B74FA8 /* DistanceCalculationViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41E3248B856A00B74FA8 /* DistanceCalculationViewProtocol.swift */; };
+		AF8F41E6248B876800B74FA8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41E5248B876800B74FA8 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		AF1777BB248971340014D38A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		AF1777BD248971550014D38A /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		AF6FDCE4248A7D160042679A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		AF8F41E1248B768B00B74FA8 /* DistanceCalculationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculationViewModel.swift; sourceTree = "<group>"; };
+		AF8F41E3248B856A00B74FA8 /* DistanceCalculationViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculationViewProtocol.swift; sourceTree = "<group>"; };
+		AF8F41E5248B876800B74FA8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				AF1777B4248964A40014D38A /* DistanceCalculationViewController.swift */,
+				AF8F41E1248B768B00B74FA8 /* DistanceCalculationViewModel.swift */,
+				AF8F41E3248B856A00B74FA8 /* DistanceCalculationViewProtocol.swift */,
 				AF1777B624896B5B0014D38A /* CustomUIElements */,
 			);
 			path = View;
@@ -99,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				AF6FDCE4248A7D160042679A /* Fonts.swift */,
+				AF8F41E5248B876800B74FA8 /* Alert.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -177,10 +186,13 @@
 				AF6FDCE5248A7D160042679A /* Fonts.swift in Sources */,
 				AF1777BA2489711E0014D38A /* CustomTextField.swift in Sources */,
 				AF17779924869C5B0014D38A /* AppDelegate.swift in Sources */,
+				AF8F41E4248B856A00B74FA8 /* DistanceCalculationViewProtocol.swift in Sources */,
 				AF1777BE248971550014D38A /* CustomTextView.swift in Sources */,
 				AF1777B824896BE40014D38A /* CustomLabel.swift in Sources */,
 				AF1777B5248964A50014D38A /* DistanceCalculationViewController.swift in Sources */,
 				AF1777BC248971340014D38A /* CustomButton.swift in Sources */,
+				AF8F41E6248B876800B74FA8 /* Alert.swift in Sources */,
+				AF8F41E2248B768B00B74FA8 /* DistanceCalculationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
