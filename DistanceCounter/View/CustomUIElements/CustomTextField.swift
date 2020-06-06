@@ -17,5 +17,7 @@ class CustomTextField: UITextField {
     private func setupAppearance() {
         font = Fonts.textFieldFont
         textColor = .lightGray
+        
+        keyboardType = .numbersAndPunctuation
     }
 }
