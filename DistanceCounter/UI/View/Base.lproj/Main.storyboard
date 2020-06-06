@@ -22,20 +22,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Latitude" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mx0-VK-zWL" customClass="CustomTextField" customModule="DistanceCounter" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mx0-VK-zWL" customClass="CustomTextField" customModule="DistanceCounter" customModuleProvider="target">
                                 <rect key="frame" x="20" y="72" width="160.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="startPointLatitudeTextFieldIsActive:" destination="BYZ-38-t0r" eventType="editingChanged" id="cxG-fm-K1V"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Longtitude" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fi0-Bw-47t" customClass="CustomTextField" customModule="DistanceCounter" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fi0-Bw-47t" customClass="CustomTextField" customModule="DistanceCounter" customModuleProvider="target">
                                 <rect key="frame" x="194.5" y="182" width="160.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="finishPointLongitudeTextFieldIsActive:" destination="BYZ-38-t0r" eventType="editingChanged" id="k4K-RY-xse"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Latitude" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZh-D5-Q28" customClass="CustomTextField" customModule="DistanceCounter" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZh-D5-Q28" customClass="CustomTextField" customModule="DistanceCounter" customModuleProvider="target">
                                 <rect key="frame" x="20" y="182" width="160.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="finishPointLatitudeTextFieldIsActive:" destination="BYZ-38-t0r" eventType="editingChanged" id="5kO-rp-fow"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="To4-XV-nJh" customClass="CustomLabel" customModule="DistanceCounter" customModuleProvider="target">
                                 <rect key="frame" x="20" y="153" width="45" height="21"/>
@@ -78,10 +87,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Longtitude" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfl-4C-EoU" customClass="CustomTextField" customModule="DistanceCounter" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfl-4C-EoU" customClass="CustomTextField" customModule="DistanceCounter" customModuleProvider="target">
                                 <rect key="frame" x="194.5" y="72" width="160.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="startPointLongitudeTextFieldIsActive:" destination="BYZ-38-t0r" eventType="editingChanged" id="NUf-RN-9zL"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -132,7 +144,7 @@
                         <outlet property="distanceInMetersTitleLabel" destination="vkg-GG-E5s" id="zFs-xr-c6Z"/>
                         <outlet property="finishPointInfoTextView" destination="2LE-z6-H6a" id="6ky-Ra-g4C"/>
                         <outlet property="finishPointLatitudeTextField" destination="fZh-D5-Q28" id="7j9-2g-0d7"/>
-                        <outlet property="finishPointLongtitudeTextField" destination="fi0-Bw-47t" id="gmH-3E-yJ0"/>
+                        <outlet property="finishPointLongitudeTextField" destination="fi0-Bw-47t" id="gmH-3E-yJ0"/>
                         <outlet property="finishPointTitleLabel" destination="To4-XV-nJh" id="qEg-1c-uPn"/>
                         <outlet property="startPointInfoTextView" destination="GlI-Vr-poS" id="lVG-nD-cUf"/>
                         <outlet property="startPointLatitudeTextField" destination="mx0-VK-zWL" id="B4s-y1-jec"/>
