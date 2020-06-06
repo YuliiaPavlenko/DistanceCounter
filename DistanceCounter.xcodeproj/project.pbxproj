@@ -21,6 +21,7 @@
 		AF8F41E4248B856A00B74FA8 /* DistanceCalculationViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41E3248B856A00B74FA8 /* DistanceCalculationViewProtocol.swift */; };
 		AF8F41E6248B876800B74FA8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41E5248B876800B74FA8 /* Alert.swift */; };
 		AF8F41EA248B9A7300B74FA8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF8F41E9248B9A7300B74FA8 /* Localizable.strings */; };
+		AF8F41ED248B9E2600B74FA8 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F41EC248B9E2600B74FA8 /* String+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		AF8F41E3248B856A00B74FA8 /* DistanceCalculationViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculationViewProtocol.swift; sourceTree = "<group>"; };
 		AF8F41E5248B876800B74FA8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		AF8F41E9248B9A7300B74FA8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AF8F41EC248B9E2600B74FA8 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		AF6FDCE3248A7CFD0042679A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AF8F41EE248B9E2C00B74FA8 /* Utils */,
 				AF1777B624896B5B0014D38A /* CustomUI */,
 				AF6FDCE4248A7D160042679A /* Fonts.swift */,
 				AF8F41E5248B876800B74FA8 /* Alert.swift */,
@@ -129,6 +132,14 @@
 				AF1777B32489602E0014D38A /* View */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		AF8F41EE248B9E2C00B74FA8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AF8F41EC248B9E2600B74FA8 /* String+Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8F41ED248B9E2600B74FA8 /* String+Utils.swift in Sources */,
 				AF6FDCE5248A7D160042679A /* Fonts.swift in Sources */,
 				AF1777BA2489711E0014D38A /* CustomTextField.swift in Sources */,
 				AF17779924869C5B0014D38A /* AppDelegate.swift in Sources */,
