@@ -31,4 +31,19 @@ class DistanceCalculationViewModel {
             view?.showIncorrectUserInput(with: "invalid_format".localized(), message: "invalid_longitude".localized())
         }
     }
+    
+    func getPointsDataWith(latitude: Double, longitute: Double) {
+        view?.showLoadingView()
+        NetworkManager.shared.getPointWith(latitude: latitude, longitute: longitute) { [weak self] result in
+            guard let self = self else { return }
+             self.view?.dismissLoadingView()
+            
+            switch result {
+            case .success(let point):
+                self.view?.updateUI(with: point)
+            case .failure(let error):
+                self.view?.presentAlertOnMainThread(title: "Error", message: error.rawValue, buttonTitle: "OK")
+            }
+        }
+    }
 }
