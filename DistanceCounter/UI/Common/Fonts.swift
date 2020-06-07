@@ -12,5 +12,5 @@ struct Fonts {
     static let titleBold = UIFont.boldSystemFont(ofSize: 16)
     static let titleRegular = UIFont.systemFont(ofSize: 16)
     static let textFieldFont = UIFont.systemFont(ofSize: 12)
-    static let titleViewFont = UIFont.systemFont(ofSize: 14)
+    static let textViewFont = UIFont.systemFont(ofSize: 14)
 }

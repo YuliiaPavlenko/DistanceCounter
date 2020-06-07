@@ -18,6 +18,7 @@ class CustomTextView: UITextView {
         layer.cornerRadius = 10
         layer.borderWidth = 0.2
         layer.borderColor = UIColor.systemGray.cgColor
+        font = Fonts.textViewFont
         textColor = .darkText
     }
 }
