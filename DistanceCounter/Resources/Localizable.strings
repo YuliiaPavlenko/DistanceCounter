@@ -6,8 +6,17 @@
   Copyright © 2020 Yuliia Pavlenko. All rights reserved.
 */
 
+"latitude_start_point" = "Latitude of start point";
+"longitude_start_point" = "Longitude of start point";
+"latitude_finish_point" = "Latitude of finish point";
+"longitude_finish_point" = "Longitude of finish point";
+"calculate_distance" = "Calculate Distance";
 "invalid_format" = "Invalid format";
 "invalid_latitude" = "Latitude should be in range -90...90";
 "invalid_longitude" = "Longitude should be in range -180...180";
 "ok" = "OK";
 "error" = "Error";
+"unable_geocode_start_place" = "Unable to geocode start place. Please, try again with another coordinates.";
+"unable_geocode_finish_place" = "Unable to geocode finish place. Please, try again with another coordinates.";
+"unknown_location" = "Unknown location.";
+
