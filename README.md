@@ -1,5 +1,7 @@
 # DistanceCounter
-Simple application for calculate distance between geo points
+Simple iOS application for calculate distance between geo points
+# Platform
+iOS
 # Deployment Target
 iOS: 11
 # Device
