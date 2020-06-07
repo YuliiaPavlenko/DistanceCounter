@@ -9,7 +9,7 @@
 import Foundation
 
 class ApiRouter {
-    private static let format = Config.baseURL + "/reverse?format=jsonv2"
+    private static let format = Config.baseURL + "/reverse?format=geocodejson"
     
     static func pointFor(latitude: Double, longitute: Double) -> String {
         return format + "&lat=\(latitude)&lon=\(longitute)"
