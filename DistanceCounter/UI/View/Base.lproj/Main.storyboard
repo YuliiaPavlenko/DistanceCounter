@@ -87,8 +87,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ToZ-Qa-FuP" secondAttribute="trailing" constant="121" id="0e6-8t-QGW"/>
-                            <constraint firstItem="ToZ-Qa-FuP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="1UA-AR-0J4"/>
                             <constraint firstItem="Lkm-IN-VEH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1b5-RE-xmn"/>
                             <constraint firstItem="hfl-4C-EoU" firstAttribute="leading" secondItem="mx0-VK-zWL" secondAttribute="trailing" constant="14" id="2sX-3r-1OO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2LE-z6-H6a" secondAttribute="trailing" constant="22" id="3MX-xp-fIw"/>
@@ -107,6 +105,7 @@
                             <constraint firstItem="hfl-4C-EoU" firstAttribute="top" secondItem="mx0-VK-zWL" secondAttribute="top" id="UN4-zT-HVe"/>
                             <constraint firstItem="vkg-GG-E5s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vlb-4l-LhN"/>
                             <constraint firstItem="2LE-z6-H6a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="Xqo-VN-DAy"/>
+                            <constraint firstItem="ToZ-Qa-FuP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="beb-g1-kNt"/>
                             <constraint firstItem="ToZ-Qa-FuP" firstAttribute="top" secondItem="fZh-D5-Q28" secondAttribute="bottom" priority="250" constant="53" id="dP1-CL-eR5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fi0-Bw-47t" secondAttribute="trailing" constant="20" id="fBL-Us-5En"/>
                             <constraint firstItem="hfl-4C-EoU" firstAttribute="width" secondItem="mx0-VK-zWL" secondAttribute="width" id="hEJ-zm-av2"/>
