@@ -77,7 +77,7 @@ class DistanceCalculationViewModel {
         getPointsData(with: latitude, and: longitute) { [weak self] place in
         guard let self = self else { return }
             if let _ = place {
-                self.view?.showStartPointInfo(for: "Start point is in: \n \(place!)")
+                self.view?.showStartPointInfo(for: "Start point is in: \n\(place!)")
             } else {
                 self.view?.presentAlertOnMainThread(title: "error".localized(), message: "unable_geocode_start_place".localized(), buttonTitle: "ok".localized())
                 self.view?.showStartPointInfo(for: "unknown_location".localized())

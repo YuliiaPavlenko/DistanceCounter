@@ -10,6 +10,7 @@ import UIKit
 
 class DistanceCalculationViewController: UIViewController {
     
+    // MARK: - Properties
     @IBOutlet weak var startPointTitleLabel: CustomLabel!
     @IBOutlet weak var startPointLatitudeTextField: CustomTextField!
     @IBOutlet weak var startPointLongitudeTextField: CustomTextField!
@@ -23,10 +24,10 @@ class DistanceCalculationViewController: UIViewController {
     @IBOutlet weak var finishPointInfoTextView: CustomTextView!
     
     var activeTextField: UITextField?
-    
-    var viewModel = DistanceCalculationViewModel()
-    
     let spinerVC = SpinnerViewController()
+    
+    // MARK: - View Model
+    var viewModel = DistanceCalculationViewModel()
 
     @IBAction func calculateDistanceButtonClicked(_ sender: Any) {
         activeTextField?.resignFirstResponder()
@@ -50,6 +51,7 @@ class DistanceCalculationViewController: UIViewController {
          finishPointLatitudeTextField, finishPointLongitudeTextField].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
     }
     
+    // MARK: - Custom functions
     @objc func editingChanged(_ textField: UITextField) {
         switch textField {
         case startPointLatitudeTextField:
