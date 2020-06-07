@@ -8,27 +8,49 @@
 
 import Foundation
 
+// MARK: - Place
 struct Place: Codable {
+    var type: String?
+    var geocoding: WelcomeGeocoding?
+    var features: [Feature]?
+}
+
+// MARK: - Feature
+struct Feature: Codable {
+    var type: String?
+    var properties: Properties?
+    var geometry: Geometry?
+}
+
+// MARK: - Geometry
+struct Geometry: Codable {
+    var type: String?
+    var coordinates: [Double]?
+}
+
+// MARK: - Properties
+struct Properties: Codable {
+    var geocoding: PropertiesGeocoding?
+}
+
+// MARK: - PropertiesGeocoding
+struct PropertiesGeocoding: Codable {
     var placeID: Int?
-    var licence, osmType: String?
+    var osmType: String?
     var osmID: Int?
-    var lat, lon: String?
-    var placeRank: Int?
-    var category, type: String?
-    var importance: Double?
-    var addresstype, name, displayName: String?
-    var address: Address?
-    var boundingbox: [String]?
+    var type: String?
+    var accuracy: Int?
+    var label, name, country: String?
 
     enum CodingKeys: String, CodingKey {
         case placeID
-        case licence
         case osmType
         case osmID
-        case lat, lon
-        case placeRank
-        case category, type, importance, addresstype, name
-        case displayName
-        case address, boundingbox
+        case type, accuracy, label, name, country
     }
+}
+
+// MARK: - WelcomeGeocoding
+struct WelcomeGeocoding: Codable {
+    var version, attribution, licence, query: String?
 }
