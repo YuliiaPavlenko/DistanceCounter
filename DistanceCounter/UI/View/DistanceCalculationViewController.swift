@@ -27,21 +27,13 @@ class DistanceCalculationViewController: UIViewController {
     var viewModel = DistanceCalculationViewModel()
     
     let spinerVC = SpinnerViewController()
-    
-    @IBAction func startPointLatitudeTextFieldIsActive(_ sender: Any) {
-        viewModel.checkIfLatitudeIsCorrect(userInput: startPointLatitudeTextField.text!)
-    }
-    
-    @IBAction func startPointLongitudeTextFieldIsActive(_ sender: Any) {
-        viewModel.checkIfLongitudeIsCorrect(userInput: startPointLongitudeTextField.text!)
-    }
-    
-    @IBAction func finishPointLatitudeTextFieldIsActive(_ sender: Any) {
-        viewModel.checkIfLatitudeIsCorrect(userInput: startPointLatitudeTextField.text!)
-    }
-    
-    @IBAction func finishPointLongitudeTextFieldIsActive(_ sender: Any) {
-        viewModel.checkIfLongitudeIsCorrect(userInput: startPointLongitudeTextField.text!)
+
+    @IBAction func calculateDistanceButtonClicked(_ sender: Any) {
+        activeTextField?.resignFirstResponder()
+        viewModel.calculateDistanceButtonClicked(startLatitude: startPointLatitudeTextField.text!,
+                                                 startLongitude: startPointLongitudeTextField.text!,
+                                                 finishLatitude: finishPointLatitudeTextField.text!,
+                                                 finishLongitude: finishPointLongitudeTextField.text!)
     }
     
     // MARK: - View Lifecycle
@@ -51,7 +43,45 @@ class DistanceCalculationViewController: UIViewController {
         viewModel.view = self
 
         setupTextFieldDelegates()
+        setupButon()
         addKeyboardObservers()
+        
+        [startPointLatitudeTextField, startPointLongitudeTextField,
+         finishPointLatitudeTextField, finishPointLongitudeTextField].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
+    }
+    
+    @objc func editingChanged(_ textField: UITextField) {
+        switch textField {
+        case startPointLatitudeTextField:
+            viewModel.validateStartLatitudeField(with: startPointLatitudeTextField.text!)
+        case startPointLongitudeTextField:
+            viewModel.validateStartLongituteField(with: startPointLongitudeTextField.text!)
+        case finishPointLatitudeTextField:
+            viewModel.validateFinishLatitudeField(with: finishPointLatitudeTextField.text!)
+        case finishPointLongitudeTextField:
+            viewModel.validateFinishLongituteField(with: finishPointLongitudeTextField.text!)
+        default:
+            return
+        }
+        
+        guard
+            let startPointLatitude = startPointLatitudeTextField.text,
+                                    !startPointLatitude.isEmpty,
+                                    viewModel.isStartLatitudeFilledCorrect,
+            let startPointLongitude = startPointLongitudeTextField.text,
+                                    !startPointLongitude.isEmpty,
+                                    viewModel.isStartLongituteFilledCorrect,
+            let finishPointLatitude = finishPointLatitudeTextField.text,
+                                    !finishPointLatitude.isEmpty,
+                                    viewModel.isFinishLatitudeFilledCorrect,
+            let finishPointLongitude = finishPointLongitudeTextField.text,
+                                    !finishPointLongitude.isEmpty,
+                                    viewModel.isFinishLongituteFilledCorrect
+        else {
+            calculateDistanceButton.isEnabled = false
+            return
+        }
+        calculateDistanceButton.isEnabled = true
     }
     
     private func setupTextFieldDelegates() {
@@ -64,10 +94,15 @@ class DistanceCalculationViewController: UIViewController {
     }
     
     private func setPlacehordersForTextFields() {
-        startPointLatitudeTextField.placeholder = "Latitude of start point"
-        startPointLongitudeTextField.placeholder = "Longitude of start point"
-        finishPointLatitudeTextField.placeholder = "Latitude of finish point"
-        finishPointLongitudeTextField.placeholder = "Longitude of finish point"
+        startPointLatitudeTextField.placeholder = "latitude_start_point".localized()
+        startPointLongitudeTextField.placeholder = "longitude_start_point".localized()
+        finishPointLatitudeTextField.placeholder = "latitude_finish_point".localized()
+        finishPointLongitudeTextField.placeholder = "longitude_finish_point".localized()
+    }
+    
+    private func setupButon() {
+        calculateDistanceButton.setTitle("calculate_distance".localized(), for: .normal)
+        calculateDistanceButton.isEnabled = false
     }
     
     
@@ -123,12 +158,22 @@ extension DistanceCalculationViewController: UITextFieldDelegate {
 
 // MARK: - DistanceCalculationViewProtocol
 extension DistanceCalculationViewController: DistanceCalculationViewProtocol {
-    func updateUI(with: Place) {
-        
+    
+    func showStartPointInfo(for place: String) {
+        DispatchQueue.main.async {
+            self.startPointInfoTextView.text = place
+        }
+    }
+    
+    func showFinishPointInfo(for place: String) {
+        DispatchQueue.main.async {
+            self.finishPointInfoTextView.text = place
+        }
     }
     
     func presentAlertOnMainThread(title: String, message: String, buttonTitle: String) {
         Alert.showAlertOnMainThread(on: self, with: title, message: message)
+        
     }
     
     func showIncorrectUserInput(with title: String, message: String) {
@@ -143,8 +188,18 @@ extension DistanceCalculationViewController: DistanceCalculationViewProtocol {
     }
     
     func dismissLoadingView() {
-        spinerVC.willMove(toParent: nil)
-        spinerVC.view.removeFromSuperview()
-        spinerVC.removeFromParent()
+        DispatchQueue.main.async {
+            self.spinerVC.willMove(toParent: nil)
+            self.spinerVC.view.removeFromSuperview()
+            self.spinerVC.removeFromParent()
+        }
+    }
+    
+    func setDistanceInKilometers(_ distance: String) {
+        distanceInKilometersTitleLabel.text = distance
+    }
+    
+    func setDistanceInMeters(_ distance: String) {
+        distanceInMetersTitleLabel.text = distance
     }
 }
