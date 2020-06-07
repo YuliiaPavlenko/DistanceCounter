@@ -11,7 +11,6 @@ import Foundation
 // MARK: - Place
 struct Place: Codable {
     var type: String?
-    var geocoding: WelcomeGeocoding?
     var features: [Feature]?
 }
 
@@ -19,13 +18,6 @@ struct Place: Codable {
 struct Feature: Codable {
     var type: String?
     var properties: Properties?
-    var geometry: Geometry?
-}
-
-// MARK: - Geometry
-struct Geometry: Codable {
-    var type: String?
-    var coordinates: [Double]?
 }
 
 // MARK: - Properties
@@ -41,16 +33,4 @@ struct PropertiesGeocoding: Codable {
     var type: String?
     var accuracy: Int?
     var label, name, country: String?
-
-    enum CodingKeys: String, CodingKey {
-        case placeID
-        case osmType
-        case osmID
-        case type, accuracy, label, name, country
-    }
-}
-
-// MARK: - WelcomeGeocoding
-struct WelcomeGeocoding: Codable {
-    var version, attribution, licence, query: String?
 }
