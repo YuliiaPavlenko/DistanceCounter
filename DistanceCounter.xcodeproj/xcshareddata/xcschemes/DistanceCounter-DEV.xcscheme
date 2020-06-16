@@ -24,10 +24,54 @@
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AF9A644C24962A93005E695A"
+            BuildableName = "DistanceCounterTests.xctest"
+            BlueprintName = "DistanceCounterTests"
+            ReferencedContainer = "container:DistanceCounter.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AF17779424869C5B0014D38A"
+            BuildableName = "DistanceCounter.app"
+            BlueprintName = "DistanceCounter"
+            ReferencedContainer = "container:DistanceCounter.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AF231BDA249541FA0014BED8"
+            BuildableName = "DistanceCounterUITests.xctest"
+            BlueprintName = "DistanceCounterUITests"
+            ReferencedContainer = "container:DistanceCounter.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF231BDA249541FA0014BED8"
+               BuildableName = "DistanceCounterUITests.xctest"
+               BlueprintName = "DistanceCounterUITests"
+               ReferencedContainer = "container:DistanceCounter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF9A644C24962A93005E695A"
+               BuildableName = "DistanceCounterTests.xctest"
+               BlueprintName = "DistanceCounterTests"
+               ReferencedContainer = "container:DistanceCounter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

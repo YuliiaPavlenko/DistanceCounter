@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF231BDA249541FA0014BED8"
+               BuildableName = "DistanceCounterUITests.xctest"
+               BlueprintName = "DistanceCounterUITests"
+               ReferencedContainer = "container:DistanceCounter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF9A644C24962A93005E695A"
+               BuildableName = "DistanceCounterTests.xctest"
+               BlueprintName = "DistanceCounterTests"
+               ReferencedContainer = "container:DistanceCounter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
